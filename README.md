@@ -1,69 +1,99 @@
-# Welcome to your Lovable project
+# Library Management System
 
-## Project info
+## Introduction
+A modern library management system built with React and Firebase offers a seamless experience for users to browse books, manage their profiles, and handle book borrowing/returns. The system features a clean UI with dark mode support and responsive design.
 
-**URL**: https://lovable.dev/projects/b25e1305-3894-41be-9151-3394c589c508
+## Project Type
+Frontend with Firebase Integration
 
-## How can I edit this code?
+## Deployed App
+https://library-explorers.netlify.app/
 
-There are several ways of editing your application.
+## Features
+- 📚 Browse extensive book collection with search and filter capabilities
+- 👤 User authentication and profile management
+- 📖 Book borrowing and return system
+- 🌓 Dark/Light mode toggle
+- 📱 Fully responsive design
+- 🔍 Advanced search with title, author, and genre filters
+- 📊 User dashboard with borrowed books tracking
 
-**Use Lovable**
+## Design Decisions & Assumptions
+- Used shadcn/ui for consistent and modern UI components
+- Implemented Firebase Authentication for user management
+- Responsive grid layout for book display
+- Assumed books have fixed attributes (title, author, image, availability)
+- Toast notifications for user feedback
+- Mobile-first design approach
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b25e1305-3894-41be-9151-3394c589c508) and start prompting.
+## Installation & Getting Started
+1. Clone the repository
+```bash
+git clone https://github.com/imakash13/The_code_explorers.git
+cd library-lingo-main
+```
 
-Changes made via Lovable will be committed automatically to this repo.
+2. Install dependencies
+```bash
+npm install
+```
 
-**Use your preferred IDE**
+3. Set up environment variables
+Create a `.env` file with your Firebase configuration:
+```
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Usage
+1. Visit the homepage to browse available books
+2. Sign in/up using the authentication system
+3. View your profile to see borrowed books
+4. Use the search bar to find specific books
+5. Click on books to view details
+6. Use the profile section to manage your borrowed books
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Credentials
+Demo Account:
+- Email: demo@example.com
+- Password: demo123
 
-**Use GitHub Codespaces**
+## Technology Stack
+- ⚛️ React (Frontend framework)
+- 🔥 Firebase (Authentication & Database)
+- 💨 Tailwind CSS (Styling)
+- 🎨 shadcn/ui (UI Components)
+- ⚡ Vite (Build tool)
+- 📦 TypeScript (Type safety)
+- 🔄 React Query (Data fetching)
+- 🎯 React Router (Navigation)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
+```
+library-management/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/         # Page components
+│   ├── hooks/         # Custom React hooks
+│   ├── lib/           # Utility functions
+│   ├── types/         # TypeScript type definitions
+│   └── main.tsx       # Application entry point
+├── public/            # Static assets
+└── index.html         # HTML template
+```
 
-## What technologies are used for this project?
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This project is built with .
+## License
+MIT License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b25e1305-3894-41be-9151-3394c589c508) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
